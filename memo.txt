@@ -1,0 +1,30 @@
+git remote add origin https://github.com/masataka-hosoya/todo.git
+github
+
+・フォルダに移動
+
+mhiMac:~ hosoyamasataka$ cd /Applications/MAMP/htdocs/todo
+
+
+・gitの初期化
+
+git init
+
+Initialized empty Git repository in /Applications/MAMP/htdocs/todo/.git/
+
+
+・リモート先登録
+
+git remote add origin https://github.com/masataka-hosoya/todo.git
+
+・リモート先にpush
+git push -u origin master
+
+
+・参考記事
+
+https://qiita.com/takanatsu/items/fc89de9bd11148da1438
+
+http://feb19.jp/blog/archives/000226.php
+
+https://qiita.com/iron-breaker/items/6da9e0f1af0b4c2c1cfa
