@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <!-- Required meta tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+
+    <title>todo</title>
+    <style>
+     body {
+       background-size: cover; /*ボックス全体をカバーする大きさで表示*/
+       background-image: url(img/AMEMAN17826009_TP_V.jpg);
+       background-repeat: no-repeat;
+       background-attachment: fixed;
+       background-position: center center;
+     }
+
+     .form-control::-webkit-input-placeholder{
+         color: white;
+     }
+
+     .todolist {
+       /* height: 30px; */
+       /* position: relative; */
+     }
+
+     /* #check {
+       position: absolute;
+       top:5;
+       left: 5;
+     } */
+
+   </style>
+  </head>
+  <body>
+    <div class="container">
+    <form action="/todo/index.php" method="post" name="form1" class="text-center">
+      <input type="text" name="todotext" maxlength="20" class=" form-control my-3 bg-transparent text-white border-white" id="text" placeholder="文字を入力してください。">
+      <div class="text-right">
+        <input type="submit" name="insert" value="追加" class="mr-1 mb-2 btn btn-outline-light col-md-1">
+        <input type="submit" name="delete" value="削除" class="mr-1 mb-2 btn btn-outline-light col-md-1">
+        <input type="submit" name="alldelete" value="全削除" class="mb-2 btn btn btn-outline-light col-md-1">
+      </div>
+
+    <pre>
+    <div class="card text-left mb-3"><div class="card-body todolist"><input id="check" type="checkbox" name="check[]" value="20">a
+</div></div><div class="card text-left mb-3"><div class="card-body todolist"><input id="check" type="checkbox" name="check[]" value="21">sss
+</div></div>    </pre>
+    </form>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+
+
+
+  </body>
+</html>
